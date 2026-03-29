@@ -1,0 +1,72 @@
+/* Inicializa */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Movile First */
+body {
+  font-family: sans-serif;
+}
+
+header {
+    background: #f4f4f4;
+}
+
+/* estructura principal */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+/* Flexbox para tarjetas */
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tarjetas de libros */
+.libro-card {
+    background: #ddd;
+    padding: 10px;
+}
+
+.libro-card img {
+    width: 100%;
+    height: 250px;       /* 👈 altura fija */
+    object-fit: cover;   /* 👈 recorte sin deformar */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* Tamaño adaptable para tablet */
+@media (min-width: 576px) {
+
+    .container-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .libro-card {
+        width: 48%;
+    }
+
+    .layout {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Tamaño adaptable para escritorio */
+@media (min-width: 992px) {
+
+    .libro-card {
+        width: 30%;
+    }
+}
