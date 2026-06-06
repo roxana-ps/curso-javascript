@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actividad 2 - Node + Express + MySQL</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Actividad 2</h1>
+
+    <h2>Node.js + Express + MySQL</h2>
+
+    <hr>
+
+    <button onclick="consultar('/conductores')">
+        Ver Conductores
+    </button>
+
+    <button onclick="consultar('/automoviles')">
+        Ver Automóviles
+    </button>
+
+    <button onclick="consultar('/conductoressinauto?edad=30')">
+        Conductores sin auto menores de 30
+    </button>
+
+    <button onclick="consultar('/solitos')">
+        Solitos
+    </button>
+
+    <button onclick="consultar('/auto?patente=HXJH55')">
+        Buscar patente HXJH55
+    </button>
+
+    <button onclick="consultar('/auto?iniciopatente=H')">
+        Patentes que comienzan con H
+    </button>
+
+    <hr>
+
+    <h3>Resultado</h3>
+
+    <pre id="resultado">
+
+Aquí aparecerá la información...
+
+    </pre>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
