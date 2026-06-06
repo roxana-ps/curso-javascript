@@ -1,0 +1,47 @@
+{{mayusculas tienda}}
+
+</h1>
+
+<h2>
+
+{{mensaje}}
+
+</h2>
+
+<hr>
+
+{{#each productos}}
+
+<p>
+
+Nombre: {{nombre}}
+
+</p>
+
+<p>
+
+Precio: ${{precio}}
+
+</p>
+
+{{#if disponible}}
+
+<p>
+
+En stock
+
+</p>
+
+{{else}}
+
+<p>
+
+Agotado
+
+</p>
+
+{{/if}}
+
+<hr>
+
+{{/each}}
